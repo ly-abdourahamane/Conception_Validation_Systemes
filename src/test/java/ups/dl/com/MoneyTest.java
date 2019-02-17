@@ -2,6 +2,7 @@ package ups.dl.com;
 
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class MoneyTest {
@@ -17,7 +18,7 @@ public class MoneyTest {
 
     @Test
     public void testGetAmountPosive() {
-        Assert.assertTrue("le montant doit être positif", m.getAmount() > 0);
+        Assert.assertTrue("le montant doit être positif", m.getAmount() >= 0);
     }
 
     @Test
